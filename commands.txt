@@ -1,0 +1,30 @@
+npm init --yes
+
+
+
+🎉 Finish
+🚚 Work in
+➕ Add
+✨ Add
+🔨 Refactor code
+🐛 Fix bugs
+🔨 Refactor code - 🐛 Fix bugs
+✏️	Rename / move a file(s) / folder(s)
+✏️	Move files
+✏️	Move folder
+
+export STAGE=dev
+yarn start:prod
+
+///////
+
+yarn add uuid
+yarn add class-validator class-transformer
+yarn add typeorm @nestjs/typeorm pg
+yarn add bcrypt
+yarn add @nestjs/jwt @nestjs/passport passport passport-jwt
+yarn add @types/passport-jwt
+yarn add @types/config
+yarn add @hapi/joi
+yarn add -D @types/hapi__joi
+yarn add joi
