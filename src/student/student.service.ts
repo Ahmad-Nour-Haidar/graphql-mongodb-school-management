@@ -12,6 +12,10 @@ export class StudentService {
     private readonly studentRepository: Repository<Student>,
   ) {}
 
+  async getStudents(): Promise<Student[]> {
+    return this.studentRepository.find();
+  }
+
   async createStudent(
     createStudentInput: CreateStudentInput,
   ): Promise<Student> {
