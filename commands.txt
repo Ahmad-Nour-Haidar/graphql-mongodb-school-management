@@ -21,3 +21,5 @@ npm i @nestjs/graphql @nestjs/apollo @apollo/server graphql
 npm install graphql graphql-tools apollo-server-express @nestjs/graphql @nestjs/apollo @apollo/server
 
 npm i typeorm @nestjs/typeorm mongodb @types/mongodb
+
+npm i uuid
