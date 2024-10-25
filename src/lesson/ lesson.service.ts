@@ -26,7 +26,6 @@ export class LessonService {
     return this.lessonRepository.save({
       id: uuidV4(),
       ...createLessonInput,
-      students: [],
     });
   }
 
