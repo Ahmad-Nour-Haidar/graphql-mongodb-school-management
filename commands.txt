@@ -16,3 +16,6 @@ npm init --yes
 /////
 
 npm i graphql graphql-tools apollo-server-express @nestjs/graphql
+npm i @nestjs/graphql @nestjs/apollo @apollo/server graphql
+
+npm install graphql graphql-tools apollo-server-express @nestjs/graphql @nestjs/apollo @apollo/server
