@@ -23,3 +23,21 @@ npm install graphql graphql-tools apollo-server-express @nestjs/graphql @nestjs/
 npm i typeorm @nestjs/typeorm mongodb @types/mongodb
 
 npm i uuid
+
+npm i class-validator class-transformer
+
+# Write your query or mutation here
+mutation {
+  createLesson (
+    createLessonInput:{
+    name: "math"
+    startDate : "2024-05-05T18:00:00z"
+    endDate: "2024-05-05T18:00:00z"
+    }
+  ){
+    id
+    name
+    startDate
+    endDate
+  }
+}
