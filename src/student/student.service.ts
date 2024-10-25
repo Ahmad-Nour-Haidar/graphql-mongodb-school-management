@@ -28,4 +28,23 @@ export class StudentService {
       id: uuid(),
     });
   }
+
+  async getManyStudents(studentIds: string[]): Promise<Student[]> {
+    // const result = await this.studentRepository.find({
+    //   where: {
+    //     id: In(studentIds),
+    //   },
+    // });
+    // console.log('result', result);
+    // return result;
+
+    const students = await this.studentRepository.find();
+    // console.log(In(studentIds));
+    console.log('students', students);
+    console.log('studentIds', studentIds);
+    const s = students.filter((student) => {
+      return studentIds.includes(student.id);
+    });
+    return s;
+  }
 }
