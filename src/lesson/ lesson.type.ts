@@ -5,6 +5,9 @@ export class LessonType {
   @Field((_type) => ID)
   id: string;
 
+  @Field((_type) => ID)
+  _id: string;
+
   @Field()
   name: string;
 
