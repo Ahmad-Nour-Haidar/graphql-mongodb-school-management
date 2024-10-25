@@ -4,6 +4,7 @@ import { LessonModule } from './lesson/lesson.module';
 import { ApolloDriver, ApolloDriverConfig } from '@nestjs/apollo';
 import { Lesson } from './lesson/lesson.entity';
 import { TypeOrmModule } from '@nestjs/typeorm';
+import { StudentModule } from './student/student.module';
 
 @Module({
   imports: [
@@ -19,6 +20,7 @@ import { TypeOrmModule } from '@nestjs/typeorm';
       autoSchemaFile: true,
     }),
     LessonModule,
+    StudentModule,
   ],
 })
 export class AppModule {}
